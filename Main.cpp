@@ -299,9 +299,9 @@ void checkMain() {
     TRAINING SET - 60 000 images
   */
 
-  uchar **dataset = read_mnist_images("/Users/liuben10/Downloads/train-images-idx3-ubyte", number_of_images, image_size);
+  uchar **dataset = read_mnist_images("mnist/train-images-idx3-ubyte", number_of_images, image_size);
   // Read Labels
-  uchar *labels = read_mnist_labels("/Users/liuben10/Downloads/train-labels-idx1-ubyte", number_of_images);
+  uchar *labels = read_mnist_labels("mnist/train-labels-idx1-ubyte", number_of_images);
 
   
   int numLayers = 4;
